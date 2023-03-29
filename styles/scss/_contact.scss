@@ -1,0 +1,124 @@
+.contact-inner {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.contact-img {
+  width: 100%;
+  height: 100%;
+  max-height: 650px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.contact-form {
+  width: 100%;
+  @include flex(flex-start, center, column);
+  span {
+    font-size: 14px;
+    font-weight: bold;
+    color: $primary;
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 16px;
+    color: $text-color;
+    margin-bottom: 30px;
+  }
+
+  input {
+    width: 100%;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 16px;
+    padding: 20px;
+    // border: 2px solid $text-color;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    outline-color: $primary;
+    font-family: 'Poppins', sans-serif !important;
+  }
+  textarea {
+    width: 100%;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 16px;
+    padding: 20px;
+    // border: 2px solid $text-color;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    resize: none;
+    outline-color: $primary;
+  }
+  button {
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    color: #fff;
+    background: $primary;
+    border-radius: 8px;
+    border: none;
+    transition: 0.3s all ease;
+    cursor: pointer;
+    &:hover {
+      background: $hover;
+      transition: 0.3s all ease;
+    }
+  }
+}
+
+// tablet
+@media screen and (max-width: 768px) {
+  .contact-inner {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+}
+
+// mobile
+@media screen and (max-width: 480px) {
+  .contact-inner {
+    padding: 40px 10px;
+  }
+  .contact-form {
+    span {
+      font-size: 12px;
+    }
+    h2 {
+      font-size: 38px;
+    }
+    p {
+      font-size: 14px;
+    }
+
+    input {
+      font-size: 14px;
+      padding: 15px;
+    }
+    textarea {
+      font-size: 14px;
+      padding: 15px;
+    }
+    button {
+      padding: 15px;
+      font-size: 14px;
+    }
+  }
+}

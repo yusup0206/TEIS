@@ -1,0 +1,123 @@
+.services-page-inner {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.services-page-img {
+  width: 100%;
+  height: 90%;
+  max-height: 650px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.services-page-info {
+  width: 100%;
+  @include flex(flex-start, center, column);
+  gap: 20px;
+  h2 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 16px;
+    color: $text-color;
+  }
+}
+
+.services-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.service-tab {
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px rgba(50, 195, 108, 0.3);
+  @include flex(center, center, row);
+  text-align: center;
+  color: $text-color;
+  font-weight: bold;
+  height: 90px;
+  transition: 0.3s all ease;
+  &:hover {
+    transform: translateY(-5px);
+    transition: 0.3s all ease;
+
+    box-shadow: 0px 0px 5px rgba(50, 195, 108, 0.3),
+      0px 5px 5px rgba(50, 195, 108, 0.1);
+  }
+}
+
+.service-tab-modal-wrapper {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  @include flex(center, center, row);
+  opacity: 0;
+  height: 100%;
+  z-index: -1;
+  transition: 0.3s all ease;
+  &.active {
+    opacity: 1;
+    z-index: 1;
+    transition: 0.3s all ease;
+    .service-tab-modal {
+      transform: scale(1.3);
+    }
+  }
+}
+
+.service-tab-modal {
+  transform: scale(0.3);
+  position: relative;
+  background: #fff;
+  padding: 30px;
+  transition-duration: 0.8s;
+  @include flex(flex-start, flex-start, column);
+  width: 350px;
+  height: 300px;
+  color: $text-color;
+  border-radius: 6px;
+}
+
+.exit {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: red;
+}
+
+// tablet
+@media screen and (max-width: 768px) {
+  .services-page-inner {
+    padding: 40px 20px;
+    grid-template-columns: 1fr;
+  }
+}
+
+// mobile
+@media screen and (max-width: 480px) {
+  .services-page-inner {
+    padding: 40px 10px;
+  }
+  .services-page-info {
+    h2 {
+      font-size: 38px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}

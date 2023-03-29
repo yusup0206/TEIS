@@ -1,0 +1,104 @@
+.projects-inner {
+  width: 100%;
+  padding: 40px;
+  @include flex(center, center, column);
+  gap: 50px;
+}
+
+.projects-header {
+  text-align: center;
+  span {
+    font-size: 14px;
+    font-weight: bold;
+    color: $primary;
+  }
+  h2 {
+    font-size: 40px;
+  }
+}
+
+.projects-body {
+  width: 100%;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr;
+  @include flex(center, center, row);
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project-card {
+  @include flex(flex-start, flex-start, column);
+  gap: 20px;
+  height: 400px;
+  width: 380px;
+}
+
+.project-card-img {
+  width: 100%;
+  height: 60%;
+  border-radius: 8px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.project-card-text {
+  @include flex(flex-start, flex-start, column);
+  width: 100%;
+  height: 40%;
+  h4 {
+    font-size: 20px;
+    color: $primary;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 16px;
+    color: $text-color;
+    font-weight: bold;
+    span {
+      color: #000;
+    }
+  }
+}
+
+// tablet
+@media screen and (max-width: 768px) {
+  .projects-inner {
+    padding: 40px 20px;
+  }
+}
+
+// mobile
+@media screen and (max-width: 480px) {
+  .projects-inner {
+    padding: 40px 10px;
+  }
+  .projects-header {
+    span {
+      font-size: 12px;
+    }
+    h2 {
+      font-size: 38px;
+    }
+  }
+  .project-card-text {
+    @include flex(flex-start, flex-start, column);
+    width: 100%;
+    height: 40%;
+    h4 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 12px;
+      color: $text-color;
+      font-weight: bold;
+      span {
+        color: #000;
+      }
+    }
+  }
+}

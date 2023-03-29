@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap');
+
+@mixin flex($items, $justify, $direction) {
+  display: flex;
+  align-items: $items;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins', sans-serif !important;
+  // font-family: 'Oswald', sans-serif !important;
+}
+
+body {
+  animation: opening 1s ease-in-out forwards;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
