@@ -51,6 +51,17 @@ const swiper2 = new Swiper(".mySwiper2", {
   },
 });
 
+// active nav
+const navEl = document.querySelector(".nav");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 118) {
+    navEl.classList.add("nav-scrolled");
+  } else if (window.scrollY < 118) {
+    navEl.classList.remove("nav-scrolled");
+  }
+});
+
 // Burger
 const toggleBtn = document.querySelector(".toggle-btn");
 const navBurger = document.querySelector(".nav-burger");
@@ -73,6 +84,7 @@ burgerDropdownBtn.addEventListener("click", () => {
   burgerDropdown.classList.toggle("active");
 });
 
+// footer modal
 const footerBtn = document.querySelector(".footer-modal-btn");
 const footerModal = document.querySelector(".footer-modal");
 

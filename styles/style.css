@@ -150,6 +150,23 @@ body {
   font-size: 16px;
 }
 
+.nav {
+  width: 100%;
+  background: #fff;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.nav-scrolled {
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0px;
+  z-index: 30;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
 .nav-logo {
   font-size: 32px;
   color: #00b41c;
