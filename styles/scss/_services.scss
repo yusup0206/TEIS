@@ -19,13 +19,13 @@
 
 .services-body {
   width: 100%;
-  // display: grid;
-  // grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   // grid-template-rows: calc(30vw + 200px) calc(30vw + 200px);
 
   gap: 30px;
-  @include flex(center, center, row);
-  flex-wrap: wrap;
+  // @include flex(center, center, row);
+  // flex-wrap: wrap;
 }
 
 .services-card {
@@ -35,7 +35,8 @@
   overflow: hidden;
   gap: 40px;
   height: 500px;
-  width: 400px;
+  // width: 400px;
+ 
 
   &:hover {
     .services-card-icon {
@@ -102,6 +103,9 @@
 @media screen and (max-width: 768px) {
   .services-inner {
     padding: 40px 20px;
+  }
+  .services-body {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
