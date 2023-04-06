@@ -801,12 +801,12 @@ body {
 }
 
 .swiper-slide-text {
-  max-width: 60%;
+  width: 80%;
   color: #fff;
 }
 
 .swiper-slide-text h2 {
-  font-size: 72px;
+  font-size: 52px;
 }
 
 .swiper-slide-text p {
@@ -841,7 +841,7 @@ body {
     color: #fff;
   }
   .swiper-slide-text h2 {
-    font-size: 62px;
+    font-size: 42px;
   }
   .swiper-slide-text p {
     font-size: 16px;
@@ -857,7 +857,7 @@ body {
     color: #fff;
   }
   .swiper-slide-text h2 {
-    font-size: 42px;
+    font-size: 32px;
   }
   .swiper-slide-text p {
     font-size: 14px;
