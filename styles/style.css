@@ -837,7 +837,8 @@ body {
     padding: 40px 20px;
   }
   .swiper-slide-text {
-    max-width: 80%;
+    width: 100%;
+    text-align: center;
     color: #fff;
   }
   .swiper-slide-text h2 {
@@ -853,7 +854,6 @@ body {
     padding: 40px 10px;
   }
   .swiper-slide-text {
-    max-width: 100%;
     color: #fff;
   }
   .swiper-slide-text h2 {
@@ -1822,6 +1822,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -2264,7 +2265,6 @@ body {
           transform: scale(0.3);
   max-width: 600px;
   width: 90%;
-  height: 90%;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }

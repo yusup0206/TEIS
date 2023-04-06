@@ -72,7 +72,8 @@
     padding: 40px 20px;
   }
   .swiper-slide-text {
-    max-width: 80%;
+    width: 100%;
+    text-align: center;
     color: #fff;
     h2 {
       font-size: 42px;
@@ -89,7 +90,6 @@
     padding: 40px 10px;
   }
   .swiper-slide-text {
-    max-width: 100%;
     color: #fff;
     h2 {
       font-size: 32px;
