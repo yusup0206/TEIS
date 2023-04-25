@@ -22,6 +22,7 @@ html {
 body {
   animation: opening 1s ease-in-out forwards;
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 
 .container {
