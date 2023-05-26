@@ -1557,11 +1557,11 @@ body {
 }
 .feed-back-modal-wrapper.active {
   opacity: 1;
-  z-index: 6;
+  z-index: 9999;
   transition: 0.3s all ease;
 }
 .feed-back-modal-wrapper.active .feed-back-modal {
-  transform: scale(1);
+  transform: scale(0.8);
 }
 
 .feed-back-modal {
@@ -1637,6 +1637,14 @@ body {
 .services-page-info p {
   font-size: 16px;
   color: #9b9b9b;
+}
+.services-page-info ul {
+  margin-left: 20px;
+}
+.services-page-info ul li {
+  font-size: 16px;
+  color: #9b9b9b;
+  margin-bottom: 5px;
 }
 
 .services-tabs {
@@ -1730,6 +1738,9 @@ body {
     font-size: 34px;
   }
   .services-page-info p {
+    font-size: 14px;
+  }
+  .services-page-info ul li {
     font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */

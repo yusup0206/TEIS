@@ -59,10 +59,10 @@
   transition: 0.3s all ease;
   &.active {
     opacity: 1;
-    z-index: 6;
+    z-index: 9999;
     transition: 0.3s all ease;
     .feed-back-modal {
-      transform: scale(1);
+      transform: scale(0.8);
     }
   }
 }
